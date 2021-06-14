@@ -5,19 +5,93 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:chesswpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="800" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="260"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition  Width="100*"/>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="100*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="100*"/>
         </Grid.RowDefinitions>
-        <Grid x:Name="GamePanel" Grid.Row="1" Grid.Column="1" Background="#202020">
-            
-        </Grid>
+        
+        <Button Grid.Column="0" Grid.Row="2" Background="#FFFFFF" Click="Button_Click" Width="100" Content="K" Height="100"/>
+        <Button Grid.Column="1" Grid.Row="2" Background="#000000" Click="Button_Click" Width="100" Height="100"/>
+        <Button Grid.Column="2" Grid.Row="2" Background="#FFFFFF" Click="Button_Click" Width="100" Height="100"/>
+        <Button Grid.Column="3" Grid.Row="2" Background="#000000" Click="Button_Click" Width="100" Height="100"/>
+        <Button Grid.Column="4" Grid.Row="2" Background="#FFFFFF" Click="Button_Click" Width="100" Height="100"/>
+        <Button Grid.Column="5" Grid.Row="2" Background="#000000" Click="Button_Click" Width="100" Height="100"/>
+        <Button Grid.Column="6" Grid.Row="2" Background="#FFFFFF" Click="Button_Click" Width="100" Height="100"/>
+        <Button Grid.Column="7" Grid.Row="2" Background="#000000" Click="Button_Click" Width="100" Height="100"/>
+        <Button Grid.Column="0" Grid.Row="3" Background="#000000" Click="Button_Click" Width="100" Height="100"/>
+        <Button Grid.Column="1" Grid.Row="3" Background="#FFFFFF" Click="Button_Click" Width="100" Height="100"/>
+        <Button Grid.Column="2" Grid.Row="3" Background="#000000" Click="Button_Click" Width="100" Height="100"/>
+        <Button Grid.Column="3" Grid.Row="3" Background="#FFFFFF" Click="Button_Click" Width="100" Height="100"/>
+        <Button Grid.Column="4" Grid.Row="3" Background="#000000" Click="Button_Click" Width="100" Height="100"/>
+        <Button Grid.Column="5" Grid.Row="3" Background="#FFFFFF" Click="Button_Click" Width="100" Height="100"/>
+        <Button Grid.Column="6" Grid.Row="3" Background="#000000" Click="Button_Click" Width="100" Height="100"/>
+        <Button Grid.Column="7" Grid.Row="3" Background="#FFFFFF" Click="Button_Click" Width="100" Height="100"/>
+        <Button Grid.Column="0" Grid.Row="4" Background="#FFFFFF" Click="Button_Click" Width="100" Height="100"/>
+        <Button Grid.Column="1" Grid.Row="4" Background="#000000" Click="Button_Click" Width="100" Height="100"/>
+        <Button Grid.Column="2" Grid.Row="4" Background="#FFFFFF" Click="Button_Click" Width="100" Height="100"/>
+        <Button Grid.Column="3" Grid.Row="4" Background="#000000" Click="Button_Click" Width="100" Height="100"/>
+        <Button Grid.Column="4" Grid.Row="4" Background="#FFFFFF" Click="Button_Click" Width="100" Height="100"/>
+        <Button Grid.Column="5" Grid.Row="4" Background="#000000" Click="Button_Click" Width="100" Height="100"/>
+        <Button Grid.Column="6" Grid.Row="4" Background="#FFFFFF" Click="Button_Click" Width="100" Height="100"/>
+        <Button Grid.Column="8" Grid.Row="4" Background="#000000" Click="Button_Click" Width="100" Height="100"/>
+        <Button Grid.Column="0" Grid.Row="5" Background="#000000" Click="Button_Click" Width="100" Height="100"/>
+        <Button Grid.Column="1" Grid.Row="5" Background="#FFFFFF" Click="Button_Click" Width="100" Height="100"/>
+        <Button Grid.Column="2" Grid.Row="5" Background="#000000" Click="Button_Click" Width="100" Height="100"/>
+        <Button Grid.Column="3" Grid.Row="5" Background="#FFFFFF" Click="Button_Click" Width="100" Height="100"/>
+        <Button Grid.Column="4" Grid.Row="5" Background="#000000" Click="Button_Click" Width="100" Height="100"/>
+        <Button Grid.Column="5" Grid.Row="5" Background="#FFFFFF" Click="Button_Click" Width="100" Height="100"/>
+        <Button Grid.Column="6" Grid.Row="5" Background="#000000" Click="Button_Click" Width="100" Height="100"/>
+        <Button Grid.Column="7" Grid.Row="5" Background="#FFFFFF" Click="Button_Click" Width="100" Height="100"/>
 
+        <Button Grid.Column="1" Grid.Row="0" Click="Button_Click" x:Name="KnightB1" Background="#000000" Width="100" Height="100"/>
+        <Button Grid.Column="2" Grid.Row="0" Background="#FFFFFF" Click="Button_Click" x:Name="BishopB1" Width="100" Height="100"/>
+        <Button Grid.Column="3" Grid.Row="0" Background="#000000" Click="Button_Click" x:Name="QueenB0" Width="100" Height="100"/>
+        <Button Grid.Column="4" Grid.Row="0" Background="#FFFFFF" Click="Button_Click" x:Name="KingB0" Width="100" Height="100"/>
+        <Button Grid.Column="5" Grid.Row="0" Background="#000000" Click="Button_Click" x:Name="BishopB2" Width="100" Height="100"/>
+        <Button Grid.Column="6" Grid.Row="0" Background="#FFFFFF" Click="Button_Click" x:Name="KnightB2" Width="100" Height="100"/>
+        <Button Grid.Column="7" Grid.Row="0" Background="#000000" Click="Button_Click" x:Name="RookB2" Width="100" Height="100"/>
+        <Button Grid.Column="1" Grid.Row="1" Background="#FFFFFF" Click="Button_Click" x:Name="PawnB2" Width="100" Height="100"/>
+        <Button x:Name="PawnB8" Grid.Column="7" Grid.Row="1" Background="#FFFFFF" Click="Button_Click" Width="100" Height="100"/>
+        <Button Grid.Column="2" Grid.Row="1" Background="#000000" Click="Button_Click" x:Name="PawnB3" Width="100" Height="100"/>
+        <Button Grid.Column="3" Grid.Row="1" Background="#FFFFFF" Click="Button_Click" x:Name="PawnB4" Width="100" Height="100"/>
+        <Button Grid.Column="4" Grid.Row="1" Background="#000000" Click="Button_Click" x:Name="PawnB5" Width="100" Height="100"/>
+        <Button x:Name="PawnB6" Grid.Column="5" Grid.Row="1" Background="#FFFFFF" Click="Button_Click" Width="100" Height="100"/>
+        <Button x:Name="PawnB7" Grid.Column="6" Grid.Row="1" Background="#000000" Click="Button_Click" Width="100" Height="100"/>
+        <Button x:Name="PawnW1" Grid.Column="0" Grid.Row="6" Background="#FFFFFF" Click="Button_Click" Width="100" Height="100"/>
+        <Button Grid.Column="0" Grid.Row="7" Background="#000000" x:Name="RookW1" Click="Button_Click" Width="100" Height="100"/>
+        <Button x:Name="RookW2" Grid.Column="7" Grid.Row="7" Background="#FFFFFF" Click="Button_Click" Width="100" Height="100"/>
+        <Button x:Name="KnightW2" Grid.Column="6" Grid.Row="7" Background="#000000" Click="Button_Click" Width="100" Height="100"/>
+        <Button x:Name="BishopW2" Grid.Column="5" Grid.Row="7" Background="#FFFFFF" Click="Button_Click" Width="100" Height="100"/>
+        <Button x:Name="KingW0" Grid.Column="4" Grid.Row="7" Background="#000000" Click="Button_Click" Width="100" Height="100"/>
+        <Button x:Name="QueenW0" Grid.Column="3" Grid.Row="7" Background="#FFFFFF" Click="Button_Click" Width="100" Height="100"/>
+        <Button x:Name="BishopW1" Grid.Column="2" Grid.Row="7" Background="#000000" Click="Button_Click" Width="100" Height="100"/>
+        <Button x:Name="PawnW8" Grid.Column="7" Grid.Row="6" Background="#000000" Click="Button_Click" Width="100" Height="100"/>
+        <Button x:Name="PawnW7" Grid.Column="6" Grid.Row="6" Background="#FFFFFF" Click="Button_Click" Width="100" Height="100"/>
+        <Button x:Name="PawnW6" Grid.Column="5" Grid.Row="6" Background="#000000" Click="Button_Click" Width="100" Height="100"/>
+        <Button x:Name="PawnW5" Grid.Column="4" Grid.Row="6" Background="#FFFFFF" Click="Button_Click" Width="100" Height="100"/>
+        <Button x:Name="PawnW3" Grid.Column="2" Grid.Row="6" Background="#FFFFFF" Click="Button_Click" Width="100" Height="100"/>
+        <Button x:Name="PawnW4" Grid.Column="3" Grid.Row="6" Background="#000000" Click="Button_Click" Width="100" Height="100"/>
+        <Button x:Name="PawnW2" Grid.Column="1" Grid.Row="6" Background="#000000" Click="Button_Click" Width="100" Height="100"/>
+        <Button x:Name="KnightW1" Grid.Column="1" Grid.Row="7" Background="#FFFFFF" Click="Button_Click" Width="100" Height="100"/>
+        <Button Grid.Column="0" Grid.Row="1" Background="#000000" Click="Button_Click" x:Name="PawnB1" Width="100" Height="100"/>
+        <Button Grid.Column="0" Grid.Row="0" Background="#FFFFFF" Click="Button_Click" x:Name="RookB1" Height="100" Width="100"/>
     </Grid>
 </Window>
